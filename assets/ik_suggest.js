@@ -14,7 +14,7 @@ var pluginName = "ik_suggest",
 	 * @param {Object} element - Current DOM element from selected collection.
 	 * @param {Object} options - Configuration options.
 	 * @param {string} options.instructions - Custom instructions for screen reader users.
-	 * @param {number} options.minLength - Mininmum string length before sugestions start showing.
+	 * @param {number} options.minLength - Minimum string length before sugestions start showing.
 	 * @param {number} options.maxResults - Maximum number of shown suggestions.
 	 */
 	function Plugin( element, options ) { 
@@ -65,7 +65,7 @@ var pluginName = "ik_suggest",
 		var plugin;
 		
 		plugin = event.data.plugin;
-
+		plugin.notify.text(plugin.options.instructions);
 	};
 	
 	/** 
