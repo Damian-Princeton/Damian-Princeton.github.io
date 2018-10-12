@@ -151,7 +151,9 @@ var pluginName = "ik_suggest",
 				} else {
 					plugin.list.hide();
 				}
-
+break;
+    }
+    
 	};
 	
 	/** 
