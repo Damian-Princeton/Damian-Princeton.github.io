@@ -1,5 +1,14 @@
 ;(function ( $, window, document, undefined ) {
  
+/**
+* Create a paragraph with version number for JS file for testing 
+*/
+
+var para = document.createElement("P");                       // Create a <p> element
+var t = document.createTextNode("Version 3");       // Create a text node
+para.appendChild(t);                                          // Append the text to <p>
+document.body.appendChild(para);                              // Append <p> to <body>
+
 var pluginName = "ik_suggest",
 	defaults = {
 		'instructions': "As you start typing the application might suggest similar search terms. Use up and down arrow keys to select a suggested search string.",
