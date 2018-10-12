@@ -9,6 +9,11 @@ var t = document.createTextNode("Version 3");       // Create a text node
 para.appendChild(t);                                          // Append the text to <p>
 document.body.appendChild(para);                              // Append <p> to <body>
 
+/**
+* Changing doc title for version control
+*/
+document.title = "Version Four";
+
 var pluginName = "ik_suggest",
 	defaults = {
 		'instructions': "As you start typing the application might suggest similar search terms. Use up and down arrow keys to select a suggested search string.",
